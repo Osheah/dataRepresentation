@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <catalogue cat="technical">
+    <book>
+      <isbn>978-1-118-99987-5</isbn>
+      <title>Linux Bible 9th Edition</title>
+      <author>Christopher Negus</author>
+    </book>
+    <book>
+      <isbn>978-0-672-32978-4</isbn>
+      <title>Python Essential Reference 4th Edition</title>
+      <author>David M. Beazley</author>
+    </book>
+  </catalogue>
+  <catalogue cat="cookery">
+    <book>
+      <isbn>978-0-7160-2191-9</isbn>
+      <title>The Curry Secret</title>
+      <author>Kris Dhillon</author>
+    </book>
+    <book>
+      <isbn>1-74045-668-8</isbn>
+      <title>A little taste of ...thailand</title>
+      <author>Oi Cheepchaiissara</author>
+    </book>
+  </catalogue>
+</library>
