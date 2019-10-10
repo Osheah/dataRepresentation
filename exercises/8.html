@@ -1,0 +1,31 @@
+<!-- 8. Create a webpage with multiple inputs and a button, when the user hits the button read all the inputs, store the values into a class and output the class to the console.-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <!--For firefox to stop complaining-->
+  <title>Exercise 8</title>
+  </head>
+  <body>
+    <div id="myForm"> 
+      First Name: <input type="text" name="firstName"/><br /><br />
+      Last Name: <input type="text" name="lastName" /><br /><br />
+      Age: <input type="text" name="age" /><br /><br />
+      <button onclick="readInputs()">Output Data</button> 
+      
+    </div>
+    <p id="output" style="display:block">output goes here</p>
+    <script>
+      function readInputs() {
+        var user = {}
+        var form = document.getElementById("myForm")
+        user.firstName = form.querySelector('input[name="firstName"]').value
+        user.lastName = form.querySelector('input[name="lastName"]').value
+        user.age = form.querySelector('input[name="age"]').value
+        document.getElementById("output").innerText = JSON.stringify(user) 
+        }
+      
+
+    </script>
+  </body>
+</html>

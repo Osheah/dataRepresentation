@@ -1,0 +1,45 @@
+<!-- 10.Create a button that when it is clicked adds a row to the table (above) with data.-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8"> <!--For firefox to stop complaining-->
+  <title>Exercise 10</title>
+  <style>
+      table tr td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="myTable">
+      <tr>
+        <td>value 1</td>
+        <td>value 2</td>
+        <td><button onclick="enterData(this)">Store</button></td>
+      </tr>
+    </table>
+    <button onclick="addRow()">Add Data</button>
+    <script>
+      function enterData(inputs){
+      
+      var data = {};  
+      var row = inputs.parentNode.parentNode
+      data.cell1 = row.cells[0].firstChild.textContent;
+      data.cell2 = row.cells[1].firstChild.textContent;     
+      
+      console.log(JSON.stringify(data))
+
+      }
+      function addRow() {
+        var findRow = document.getElementById("myTable")
+        var data = {d1:'first new input', d2:'Second new input'}
+        var row = findRow.insertRow(-1)
+        var cell = row.insertCell(0)
+        cell.innerHTML = data.d1;
+        cell = row.insertCell(1)
+        cell.innerHTML = data.d2;
+      }
+      
+    </script>
+  </body>
+</html>

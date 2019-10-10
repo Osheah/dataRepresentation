@@ -1,0 +1,23 @@
+<!-- 6. Make a webpage that has  a text box when the contents of the text area changes the page will display wheter the value entered is greater or less than 10 or equal to 10-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8"> <!--For firefox to stop complaining-->
+  <title>Exercise 6</title>
+  </head>
+  <body>
+    <input id="myNum" type="number" onchange="checkNumber(this)"/><p id="myPara"></p>
+    <script>
+       
+     function checkNumber(inputValue) {
+        if(inputValue.value<10) {
+          document.getElementById("myPara").innerText = "This number is less than 10"
+        } else if(inputValue.value>10){
+          document.getElementById("myPara").innerText = "This number is greater than 10"
+        } else {
+          document.getElementById("myPara").innerText = "This number is 10"
+        }
+      }
+    </script>
+  </body>
+</html>

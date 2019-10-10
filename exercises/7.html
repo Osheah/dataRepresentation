@@ -1,0 +1,26 @@
+<!-- 7. Make a webpage that outputs 1 to 10 or N aqnd make a web page that outputs all the values of an array-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8"> <!--For firefox to stop complaining-->
+  <title>Exercise 7</title>
+  </head>
+  <body>
+    <div id="myTxt"></div>
+    <div id="myArr"></div>
+    <script>
+      var text = "";
+      for(var i = 0; i<11;i++) {
+        text += i + "<br />" 
+      }
+      document.getElementById("myTxt").innerHTML =text;
+      var arr =["apple", "orange", "banana"];
+      var a;
+      var out="";
+      for(a of arr){
+        out += a + "<br />"
+      } 
+      document.getElementById("myArr").innerHTML =out;         
+    </script>
+  </body>
+</html>

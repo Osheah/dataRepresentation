@@ -1,0 +1,21 @@
+<!-- 3. Make a webpage with an input and a button, when the user clicks the button then the contents fo the input will be displayed in another div-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8"> <!--For firefox to stop complaining-->
+  <title>Exercise 3</title>
+  </head>
+  <body>
+    <div>
+      <input id="myInput" type="text" value="Enter Data"  />
+      <button onclick="myClickedButton()">Click Here</button>
+    </div>
+    <div id="div2">above input goes here</div>
+    <script>
+    
+      function myClickedButton() {
+        document.getElementById("div2").innerText = document.getElementById("myInput").value;
+      }
+    </script>
+  </body>
+</html>

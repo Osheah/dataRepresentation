@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/> <!-- needed to display in firefox-->
+    <title>e2.3</title>
+    <!-- Javascipt can go in the head-->
+  </head>
+  <body>
+    <input id="name" type="text" value="enter name" />
+    <br />
+    <button onclick="buttonClicked()">click me</button><br />
+    <div id="output">output will go here</div>
+    <script>
+    function buttonClicked() {
+      var output = document.getElementById("name").value
+      document.getElementById("output").innerHTML = output
+    }
+    </script>
+
+  </body>
+</html>
