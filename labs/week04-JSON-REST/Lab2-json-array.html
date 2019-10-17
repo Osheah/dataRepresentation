@@ -1,0 +1,19 @@
+<!DOCTYPE = html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lab 4: JSON and AJAX (with jQuery)</title>
+
+  </head>
+  <body>
+    <script>
+      function displayJSON(){
+        var obj = JSON.parse('{"employees":[{"firstName":"John","lastName":"Doe"},{"firstName":"Anna","lastName":"Smith"},{"firstName":"Peter","lastName":"Jones"}]')
+          for(employee of obj.employees){
+            console.log(employee.firstName)
+          }
+    }
+    console.log
+    </script>
+  </body>
+</html>
