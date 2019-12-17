@@ -9,7 +9,7 @@ Each catalogue can contain a number of books (say 2 for the purpose of this exer
 Books will have an ISBN, title and author.
 
 
-labs:
+### labs:
 - week01 - carviewer.html
 - week02 - carviewer2.html
 - week03-webScraping - PY01-* to PY06-*
