@@ -1,0 +1,23 @@
+{
+    "pagination": {
+        "pageSize": 50,
+        "currentPage": 18,
+        "totalItems": 851,
+        "totalPages": 18
+    },
+    "resourceBaseUri": "http://reports.sem-o.com/documents",
+    "items": [
+        {
+            "_id": "5de3962f9620d95ddc796468",
+            "Date": "2020-01-01",
+            "PublishTime": "2019-12-01T10:00:04",
+            "DPuG_ID": "BM-011",
+            "ReportName": "Monthly Load Forecast and Assumptions",
+            "Group": [
+                "Forecast Data"
+            ],
+            "Dynamic": false,
+            "ResourceName": "PUB_MonthlyLoadFcst_201912011000.xml"
+        }
+    ]
+}

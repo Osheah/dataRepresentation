@@ -10,7 +10,7 @@ print(data)
 for car in data["cars"]:
   print(car)
 # save this to a file
-filename = 'car.json'
+filename = 'cars.json'
 if filename:
   #Writing JSON data
   with open(filename, 'w') as f: 
@@ -18,7 +18,7 @@ if filename:
 # write to excel file
 w = Workbook()
 ws = w.add_sheet('cars')
-row = 0; 
+row = 0 
 ws.write(row, 0, "reg")
 ws.write(row, 1, "make")    
 ws.write(row, 2, "model")    
